@@ -37,23 +37,63 @@ function managerInfo() {
 
         .then(response => {
 
-        console.log(response);
+            console.log(response);
 
-        const manager = new Manager(
-            response.managerName, 
-            response.managerID,
-            response.managerEmail,
-            response.managerOfficeNumber,
-        );
+            const manager = new Manager(
+                response.managerName,
+                response.managerID,
+                response.managerEmail,
+                response.managerOfficeNumber,
+            );
 
-        console.log (manager);
+            console.log(manager);
 
-        teamMembers.push (manager);
-    })
-    }
+            teamMembers.push(manager);
+        })
 
-    
-    managerInfo ();
+
+
+};
+
+// managerInfo();
+
+function addTeamMembers() {
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "addTeamMembers",
+            message: "Which type of team member would you like to add?",
+            choices: ["Manager", "Engineer", "Intern", "None"]
+        }
+    ])
+
+        .then(response => {
+
+            if (response.addTeamMembers === "Manager") {
+                managerInfo();
+            }
+
+
+            else if (response.addTeamMembers === "Engineer") {
+                EngineerInfo();
+            }
+
+
+            else if (response.addTeamMembers === "Intern") {
+                InternInfo();
+            }
+
+            else {
+                // generateHTML ();
+            }
+
+            console.log(response);
+        });
+}
+
+addTeamMembers ();
+// Question type of role to add, don't want to add another, then goes to fs writer to generate output file
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
