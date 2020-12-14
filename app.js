@@ -50,9 +50,47 @@ function managerInfo() {
 
             teamMembers.push(manager);
         })
+};
 
+function engineerInfo() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "engineerName",
+            message: "What is the name of your manager?"
+        },
+        {
+            type: "input",
+            name: "engineerID",
+            message: "What is the ID number of your manager?"
+        },
+        {
+            type: "input",
+            name: "engineerEmail",
+            message: "What is the email of your manager?"
+        },
+        {
+            type: "input",
+            name: "githubUsername",
+            message: "What is the engineer's username?"
+        },
+    ])
 
+        .then(response => {
 
+            console.log(response);
+
+            const manager = new Engineer(
+                response.engineerName,
+                response.engineerID,
+                response.engineerEmail,
+                response.githubUsername,
+            );
+
+            console.log(engineer);
+
+            teamMembers.push(engineer);
+        })
 };
 
 // managerInfo();
