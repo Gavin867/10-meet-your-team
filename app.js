@@ -16,22 +16,22 @@ function managerInfo() {
         {
             type: "input",
             name: "managerName",
-            message: "What is the name of your manager?"
+            message: "What is this manager's name?"
         },
         {
             type: "input",
             name: "managerID",
-            message: "What is the ID number of your manager?"
+            message: "What is this manager's employee ID number?"
         },
         {
             type: "input",
             name: "managerEmail",
-            message: "What is the email of your manager?"
+            message: "What is this manager's business email address?"
         },
         {
             type: "input",
             name: "managerOfficeNumber",
-            message: "What is the office number of your manager?"
+            message: "What is this manager's office number?"
         },
     ])
 
@@ -57,22 +57,22 @@ function engineerInfo() {
         {
             type: "input",
             name: "engineerName",
-            message: "What is the name of your manager?"
+            message: "What is this engineer's name?"
         },
         {
             type: "input",
             name: "engineerID",
-            message: "What is the ID number of your manager?"
+            message: "What is this engineer's employee ID number?"
         },
         {
             type: "input",
             name: "engineerEmail",
-            message: "What is the email of your manager?"
+            message: "What is this engineer's business email address?"
         },
         {
             type: "input",
             name: "githubUsername",
-            message: "What is the engineer's username?"
+            message: "What is this engineer's github username?"
         },
     ])
 
@@ -92,8 +92,6 @@ function engineerInfo() {
             teamMembers.push(engineer);
         })
 };
-
-// managerInfo();
 
 function addTeamMembers() {
     inquirer.prompt([
