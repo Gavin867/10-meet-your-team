@@ -80,7 +80,7 @@ function engineerInfo() {
 
             console.log(response);
 
-            const manager = new Engineer(
+            const engineer = new Engineer(
                 response.engineerName,
                 response.engineerID,
                 response.engineerEmail,
@@ -90,6 +90,47 @@ function engineerInfo() {
             console.log(engineer);
 
             teamMembers.push(engineer);
+        })
+};
+
+function internInfo() {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "internName",
+            message: "What is this intern's name?"
+        },
+        {
+            type: "input",
+            name: "internID",
+            message: "What is this intern's employee ID number?"
+        },
+        {
+            type: "input",
+            name: "internEmail",
+            message: "What is this intern's business email address?"
+        },
+        {
+            type: "input",
+            name: "internSchool",
+            message: "What is the name of this intern's school?"
+        },
+    ])
+
+        .then(response => {
+
+            console.log(response);
+
+            const intern = new Intern(
+                response.internName,
+                response.internID,
+                response.internEmail,
+                response.internSchool,
+            );
+
+            console.log(intern);
+
+            teamMembers.push(intern);
         })
 };
 
@@ -111,12 +152,12 @@ function addTeamMembers() {
 
 
             else if (response.addTeamMembers === "Engineer") {
-                EngineerInfo();
+                engineerInfo();
             }
 
 
             else if (response.addTeamMembers === "Intern") {
-                InternInfo();
+                internInfo();
             }
 
             else {
