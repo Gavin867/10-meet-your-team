@@ -49,6 +49,8 @@ function managerInfo() {
             console.log(manager);
 
             teamMembers.push(manager);
+ 
+            addTeamMembers ();
         })
 };
 
@@ -90,6 +92,8 @@ function engineerInfo() {
             console.log(engineer);
 
             teamMembers.push(engineer);
+            
+            addTeamMembers ();
         })
 };
 
@@ -131,6 +135,8 @@ function internInfo() {
             console.log(intern);
 
             teamMembers.push(intern);
+
+            addTeamMembers ();
         })
 };
 
@@ -180,8 +186,6 @@ function generateHTML () {
         console.log("Meet your team!");
     });
 }
-
-generateHTML ();
 
 
 // Question type of role to add, don't want to add another, then goes to fs writer to generate output file
