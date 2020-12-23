@@ -18,11 +18,13 @@ An inquirer promp application which generates an html page with office mate cont
 
 ## Location
 
-* GitHub Repository Link: https://github.com/Gavin867/10-meet-your-team
+GitHub Repository Link: https://github.com/Gavin867/10-meet-your-team
 
 ## Demo
 
-![Demo](${data.demo})
+Click the following link for testing demonstration:
+
+Click the following link application demonstration:
 
 ## Installation
 
@@ -44,7 +46,7 @@ Gavin Calkins - https://github.com/Gavin867
 
 - Lessons from UW Full Stack Flex Boot Camp.
 - Insights from instructor Anthony Brown.
-- Lots of help from my amazing tutor Namita Shenai - Check out her github at https://github.com/NVK2016!
+- Help, insights, and awesomeness from my amazing tutor Namita Shenai - Check out her github at https://github.com/NVK2016!
 
 ## Point of Contact
 
