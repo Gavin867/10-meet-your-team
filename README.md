@@ -22,9 +22,13 @@ GitHub Repository Link: https://github.com/Gavin867/10-meet-your-team
 
 ## Demo
 
-Click the following link for testing demonstration:
+Testing Demo Instructions - Click the link provided, then click "download" and open the file in your default video player to watch. 
 
-Click the following link application demonstration:
+Testing Demo Link: https://github.com/Gavin867/10-meet-your-team/blob/master/Assets/demo-videos/Repo10-app-demo.webm
+
+Application Demo Instructions - Click the link provided, then click "download" and open the file in your default video player to watch. 
+
+Application Demo Link: https://github.com/Gavin867/10-meet-your-team/blob/master/Assets/demo-videos/Repo10-app-demo.webm
 
 ## Installation
 
