@@ -161,7 +161,7 @@ function addTeamMembers() {
             }
 
             else {
-                // generateHTML ();
+                generateHTML ();
             }
 
             console.log(response);
@@ -169,6 +169,21 @@ function addTeamMembers() {
 }
 
 addTeamMembers ();
+
+
+function generateHTML () {
+
+    fs.writeFile(outputPath, render (teamMembers), function (error) {
+
+        if (error) throw error;
+
+        console.log("Meet your team!");
+    });
+}
+
+generateHTML ();
+
+
 // Question type of role to add, don't want to add another, then goes to fs writer to generate output file
 
 // Write code to use inquirer to gather information about the development team members,
