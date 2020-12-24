@@ -50,6 +50,7 @@ Gavin Calkins - https://github.com/Gavin867
 
 - Lessons from UW Full Stack Flex Boot Camp.
 - Insights from instructor Anthony Brown.
+- Insights from TA Louis Coleman.
 - Help, insights, and awesomeness from my amazing tutor Namita Shenai - Check out her github at https://github.com/NVK2016!
 
 ## Point of Contact
