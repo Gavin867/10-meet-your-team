@@ -7,6 +7,8 @@ const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
+const dir = "./output";
+
 
 const render = require("./library/htmlRenderer");
 const teamMembers = [];
@@ -178,6 +180,11 @@ addTeamMembers ();
 
 
 function generateHTML () {
+
+    if (!fs.existsSync (dir)) {
+
+        fs.mkdirSync(dir);
+    }
 
     fs.writeFile(outputPath, render (teamMembers), function (error) {
 
