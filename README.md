@@ -1,4 +1,4 @@
-# 10-meet-your-team
+# Meet Your Team
 
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg)
 
