@@ -18,7 +18,7 @@ An inquirer promp application which generates an html page with office mate cont
 
 ## Location
 
-GitHub Repository Link: https://github.com/Gavin867/10-meet-your-team
+GitHub Repository Link: https://github.com/Gavin867/Meet_Your_Team
 
 ## Demo
 
